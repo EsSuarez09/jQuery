@@ -32,4 +32,7 @@ console.log($("h1").addClass("big-title margin-50"));
 
 //--manipulating text with jQuery--
 $("h1").text("Bye");
+$("button").text("Don't click me");
+//javaScript=innerHTML to jQuery=html
+$("button").html("<em>Hey</em>");
 
