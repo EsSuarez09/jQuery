@@ -36,3 +36,12 @@ $("button").text("Don't click me");
 //javaScript=innerHTML to jQuery=html
 $("button").html("<em>Hey</em>");
 
+
+
+//--manipulating attributes with jQuery--
+console.log($("img").attr("src")); // failed to load because there's no image provided inside this project.
+
+// you can diagnose by selecting anchor and href attribute. This means that select all the anchor tags and change the 2nd input value of the href attribute.If input is only one then it will just shows the href value of this attribute.
+$("a").attr("href", "https://www.yahoo.com");
+
+
