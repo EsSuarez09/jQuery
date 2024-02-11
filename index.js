@@ -83,3 +83,19 @@ $("h1").on("click", function(){
 });
 
 
+//--adding and removing elements with jQuery
+
+//before method will add your new element before the opening tag of the selected element. ex. h1
+$("h1").before("<button>Before</button>");
+
+//after method will added after the selected element which is h1.
+$("h1").after("<button>After</button>");
+
+//prepend method will added the new element before the content of the selected element which is h1 right after the opening tag
+$("h1").prepend("<button>Prepend</button>");
+
+//Append is the opposite of the prepend method. It will add the new element after the h1 content but still inside the h1 element
+$("h1").append("<button>Append</button>");
+
+//removes element
+$("button").remove();
