@@ -98,4 +98,60 @@ $("h1").prepend("<button>Prepend</button>");
 $("h1").append("<button>Append</button>");
 
 //removes element
-$("button").remove();
+// $("button").remove();
+
+
+//--Websites Animations with jQuery
+
+//hide and show animation 
+// $("button").on("click", function(){
+//     $("h1").hide();
+// });
+
+// $("button").on("click", function(){
+//     $("h1").show();
+// });
+
+//use toggle method to hide and show animation
+// $("button").on("click", function(){
+//     $("h1").toggle();
+// });
+
+//use fadeOut and fadeIn method if want a little progressive
+
+// $("button").on("click", function(){
+//     $("h1").fadeOut();
+// });
+
+// $("button").on("click", function(){
+//     $("h1").fadeIn();
+// });
+
+//fadeToggle method to hide and show with a little progress
+// $("button").on("click", function(){
+//     $("h1").fadeToggle();
+// });
+
+//slideUp and slideDown
+// $("button").on("click", function(){
+//     $("h1").slideUp();
+// });
+
+// $("button").on("click", function(){
+//     $("h1").slideDown();
+// });
+
+//slideToggle method is very useful when you have a drop down menu
+// $("button").on("click", function(){
+//     $("h1").slideToggle();
+// });
+
+//animate method in between with curly brackets you'd only add the css property that have a numeric value
+// $("button").on("click", function(){
+//     $("h1").animate({opacity: 0.5});
+// });
+
+//combine with three methods for the transition
+$("button").on("click", function(){
+    $("h1").slideUp().slideDown().animate({opacity: 0.5});
+});
